@@ -4,7 +4,6 @@ import random
 
 video = cv2.VideoCapture("../images/IFMA Campus Caxias.mp4")
 
-
 def salpimenta(image, prob):
     output = image.copy()
     if len(image.shape) == 2:
