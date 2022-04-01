@@ -28,7 +28,7 @@ def line_drawing(event,x,y,flags,param):
         drawing=False
         circles.append((x, y))
 
-video = cv2.VideoCapture("IFMA Campus Caxias.mp4")
+video = cv2.VideoCapture("../images/IFMA Campus Caxias.mp4")
 
 frame_width = video.get(cv2.CAP_PROP_FRAME_WIDTH)
 frame_height = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
