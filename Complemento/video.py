@@ -26,8 +26,8 @@ def logo (image):
     background = cv2.bitwise_and(interesse, interesse, mask = mask_inv)
     res [25:165, 1130:1225] = background
     gray = cv2.cvtColor(res, cv2.COLOR_BGR2GRAY)
-    telea = cv2.inpaint(image, gray, 3, cv2.INPAINT_NS)
-    cv2.imshow("Logo", telea)
+    repo = cv2.inpaint(image, gray, 3, cv2.INPAINT_NS)
+    cv2.imshow("Logo", repo)
 
 def aspect(image):
     resize = cv2.resize(image, (960, 720), interpolation = cv2.INTER_LINEAR)    
