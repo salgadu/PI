@@ -19,16 +19,16 @@ for circle in circles[0]:
     xm = x - 60
     ym = y - 20
 
-    if(radius == 85 ): cv2.putText(image, "1 real", (xm, ym),
-                    cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 0), 2)
-    if(radius == 73 ): cv2.putText(image, "50 centavos", (xm, ym),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
-    if(radius == 74 ): cv2.putText(image, "25 centavos", (xm, ym),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
-    if(radius == 60): cv2.putText(image, "10 centavos", (xm, ym),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
-    if(radius == 67): cv2.putText(image, "5 centavos", (xm, ym),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
+    if(radius == 85 ): 
+        cv2.putText(image, "1 real", (xm, ym), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 0), 2)
+    if(radius == 73 ): 
+        cv2.putText(image, "50 centavos", (xm, ym), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
+    if(radius == 74 ):
+        cv2.putText(image, "25 centavos", (xm, ym), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
+    if(radius == 60): 
+        cv2.putText(image, "10 centavos", (xm, ym), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
+    if(radius == 67): 
+        cv2.putText(image, "5 centavos", (xm, ym), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
 
 cv2.imshow('Moedas', image)
 
