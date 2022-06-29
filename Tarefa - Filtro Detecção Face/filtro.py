@@ -14,8 +14,8 @@ porcentagem = 50
 def resize(image, porcentagem):
     width = int(image.shape[1] * porcentagem / 100)
     height = int(image.shape[0] * porcentagem / 100)
-    dim = (width, height)
-    image = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
+    dimensao = (width, height)
+    image = cv2.resize(image, dimensao, interpolation=cv2.INTER_AREA)
     return image
 
 oculos = resize(oculos, porcentagem)
